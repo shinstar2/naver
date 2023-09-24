@@ -1,0 +1,50 @@
+/* 공통소스 */
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+/* dpi -> 도트퍼 인치 */
+.setting-wrap .btn-up .up,
+.setting-wrap .btn-setting .setting,
+.footer .mid-area .top-wrap a::after,
+.sc-recipe  .theme-area .control-area .btn-next::after,
+.sc-recipe  .theme-area .control-area .btn-prev::before,
+.ac-whale a::after,
+.mobile-link::after,
+.mobile-link .naver,
+.now-area h2::before,
+.ac-board .eng-dic .search::after,
+.ac-board .board-item .papago,
+.ac-stock .stock-item .more,
+.ac-stock .stock-item .down,
+.ac-stock .stock-wrap .down,
+.ac-stock .header-area .refresh,
+.ac-stock .header-area .info,
+.ac-weather .header-area .compare::before ,
+.group-control .control-area .btn-next::after,
+.group-control .control-area .btn-prev::before,
+.sc-login .link-login::before,
+.header .group-nav [class*="ic-"]::before,
+.header .group-nav [class*="ic-"]::after,
+.header .group-search [class*="btn-"]::after,
+.header .util-area>*::before{
+    background-image: url(../images/sp1.png);
+    background-repeat: no-repeat;
+    background-size: 434px;
+}
+.sc-shop .group-place .my-item [class*="ic-"]::before{
+    background-image: url(../images/sp2.png);
+    background-repeat: no-repeat;
+    background-size: 134px;
+}
+.ac-weather .content-area .right-wrap .pic::before,
+.ac-weather .left-wrap .top-box .weather::before{
+    background-image: url(../images/sp3.png);
+    background-repeat: no-repeat;
+    background-size: 641px;
+}
+

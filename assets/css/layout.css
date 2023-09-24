@@ -1,0 +1,207 @@
+@import './reset.css';
+@import './common.css';
+
+.wrapper {
+    min-width: 1340px;
+}
+
+/* 헤더 */
+.header{}
+.header .inner{
+    position: relative;
+    width: 1280px;
+    height: 261px;
+    margin: 0 auto;
+    padding: 64px 0 42px;
+}
+
+.header .group-search{
+    display: flex;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    background-color: #fff;
+}
+.header .group-search .logo{}
+.header .group-search .logo svg{
+    width: 24px;
+}
+.header .group-search .logo a{
+    position: relative;
+    display: block;
+    margin-right: 12px;
+    padding: 17px 17px 17px 27px;
+}
+.header .group-search .logo path{fill:#03c75a;}
+.header .group-search form{
+    flex: 1;
+}
+.header .group-search fieldset{
+    display: flex;
+}
+.header .group-search .input-text{
+    flex: 1;
+    height: 58px;
+    color: #000;
+    z-index: 10;
+    position: relative;
+    padding: 17px 0;
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    outline: 0;
+}
+.header .group-search .btn-keyboard::after{
+    content: "";
+    display: block;
+    background-position: -50px -270px;
+    width: 24px;
+    height: 16px;
+}
+.header .group-search .btn-keyboard{
+    padding: 21px 3px;
+}
+.header .group-search .btn-help::after{
+    content: "";
+    display: block;
+    background-position: -323px -174px;
+    width: 10px;
+    height: 6px;
+}
+.header .group-search .btn-help{
+    padding: 26px 6px;
+}
+.header .group-search .btn-submit::after{
+    content: "";
+    display: block;
+    background-position: -364px -213px;
+    width: 25px;
+    height: 25px;
+}
+.header .group-search .btn-submit{
+    padding: 17px 27px 16px 10px;
+}
+
+
+.header .group-nav{
+    position: relative;
+    width: 676px;
+    margin: 72px auto 0;
+}
+.header .group-nav .nav-list{
+    display: flex;
+    gap: 10px;
+}
+.header .group-nav .nav-item{
+    flex: 1;
+}
+.header .group-nav .nav-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+/* 공통 */
+.header .group-nav [class*="ic-"]{
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.header .group-nav [class*="ic-"]::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background-position: 0px -128px;
+    width: 54px;
+    height: 54px;
+}
+.header .group-nav [class*="ic-"]::after{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+    content: '';
+}
+.header .group-nav .name{
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+/* 개인 */
+.header .group-nav .ic-mail::before{}
+.header .group-nav .ic-mail::after{
+    background-position: -250px -90px;
+}
+.header .group-nav .ic-cafe::after{
+    background-position: -250px 0;
+}
+.header .group-nav .ic-blog::after{
+    background-position: -201px -98px;
+}
+.header .group-nav .ic-shop::after{
+    background-position: -90px -209px;
+}
+.header .group-nav .ic-news::after{
+    background-position: 0px -209px;
+}
+.header .group-nav .ic-money::after{
+    background-position: -180px -209px;
+}
+.header .group-nav .ic-house::after{
+    background-position: -45px -209px;
+}
+.header .group-nav .ic-map::after{
+    background-position: -201px 0px;
+}
+.header .group-nav .ic-webtoon::after{
+    background-position: -225px -209px;
+}
+.header .group-nav .ic-etc::after{    background-position: -250px -135px;
+}
+
+
+.header .util-area{
+    display: flex;
+    position: absolute;
+    top: 18px;
+}
+.header .util-area>*{
+    padding: 10px;
+}
+.header .util-area>*::before{
+    display: block;
+    width: 26px;
+    height: 26px;
+    content: "";
+}
+.header .util-area.left{
+    left: -10px;
+}
+.header .util-area.right{
+    right: -10px;
+}
+.header .util-area .btn-menu::before{
+    background-position: -364px 0px;
+}
+.header .util-area .btn-pay::before{
+    width: 30px;
+    background-position: -31px -316px;
+    
+}
+.header .util-area .btn-talk::before{
+    background-position: -364px -108px;
+}
+.header .util-area .btn-alert::before{
+    background-position: -364px -54px;
+}
+
+/* 푸터 */
